@@ -13,6 +13,8 @@ def crear_campo(propiedad):
   cursor.close()
 
 def convertir_float(cadena):
+  if cadena == None:
+    return float(0)
   return round(float(cadena.replace(",","")),2)
 
 def eliminar_acentos(cadena):

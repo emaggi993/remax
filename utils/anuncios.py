@@ -11,6 +11,7 @@ def get_data(anuncio, link):
     conexion = Conexion()
 
     columns_table= conexion.get_columnas_nombres('inmuebles')
+    total_atributo= None
 
 
     ATRIBUTOS= {}
@@ -132,6 +133,7 @@ def get_data(anuncio, link):
       v=  valor.find('span').get_text().replace("'","-") 
       ATRIBUTOS[propiedad]= v
       datos_dic[propiedad]= v
+      
       if propiedad == "area_de_construccion_inmueble":
         temp_area= v
       if propiedad == "sup_lote_inmueble":

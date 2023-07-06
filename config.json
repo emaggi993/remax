@@ -1,9 +1,9 @@
 {
-  "CANTIDAD_DE_PAGINAS": 5,
+  "CANTIDAD_DE_PAGINAS": 8,
   "CANTIDAD_ANUNCIO_POR_PAGINA": 24,
   "CANTIDAD_TOTAL": 240,
   "TIEMPO_ESPERA": 5,
-  "INICIAR_EN_PAGINA": 2,
+  "INICIAR_EN_PAGINA": 1,
   "URL": "https://www.remax.com.py/publiclistinglist.aspx?Lang=es-PY#mode=gallery&cur=PYG&sb=MostRecent&page={}&sc=114&lsgeo=0,0,0,0&sid=9d5d45a9-b767-43b2-92fb-5ea2310022b9",
   "URL_DRIVER": "chromedriver.exe",
   "URL_CALCULO_PRECIO": "https://www.remax.com.py/PubScripts/CurrencyConverter.aspx?Amount={}&CurrencyCode={}&Region=114&Lang=ESZ",
