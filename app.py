@@ -16,7 +16,12 @@ chrome_options.add_experimental_option("prefs", {
   "download.default_directory": "/path/to/download/dir",
   "download.prompt_for_download": False,
 })
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options= chrome_options)
+try:
+  driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options= chrome_options)
+except:
+  service = Service("chromedriver.exe")
+  driver = webdriver.Chrome(service=service, options= chrome_options)
+
 url = config.URL
 
 # obtenemos los articulos de las x cantidad de paginas
