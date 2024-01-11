@@ -181,4 +181,5 @@ def get_data(anuncio, link):
     sql = "INSERT INTO inmuebles ("+into+") VALUES ("+value+") ON DUPLICATE KEY update id_inmueble = id_inmueble, precio_anterior_inmueble = precio_actual_inmueble, moneda_anterior_inmueble= moneda_inmueble, total_calculado_inmueble= values(total_calculado_inmueble), precio_mts_cuadrados_pyg_inmueble = values(precio_mts_cuadrados_pyg_inmueble), precio_mts_cuadrados_usd_inmueble = values(precio_mts_cuadrados_usd_inmueble), precio_actual_inmueble= values(precio_actual_inmueble), moneda_inmueble= values(moneda_inmueble)"
     conexion.insertar(sql)
     print("Se insertó el inmueble: ", titulo)
-    print()
+    print("")
+    
